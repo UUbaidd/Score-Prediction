@@ -31,7 +31,7 @@ filenames[0:5]
 final_df = pd.DataFrame()
 counter = 1
 
-# Assuming 'filenames' is a list of file paths to your YAML files
+# 'filenames' is a list of file paths to your YAML files
 for file in tqdm(filenames):
     with open(file, 'r') as f:
         df = pd.json_normalize(safe_load(f))  # Load the JSON/YAML data and normalize
